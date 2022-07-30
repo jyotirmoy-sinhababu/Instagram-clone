@@ -1,0 +1,56 @@
+.nav-container {
+  display: flex;
+  background-color: rgb(253, 248, 248);
+  justify-content: space-around;
+}
+
+.nav-header {
+  align-items: center;
+}
+
+.nav-header-search-input {
+  width: 300px;
+  height: 35px;
+  border-radius: 8px;
+  margin: 20px;
+  background-color: rgb(229, 226, 226);
+  font-size: 16px;
+  border: none;
+}
+
+.nav-header-img {
+  object-fit: contain;
+  width: 200px;
+  height: 80px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 16px;
+  font: inherit;
+  font-size: 100%;
+
+  margin: 0;
+  margin-right: -1px;
+  padding: 0;
+}
+.nav-buttons-login {
+  width: 80px;
+  border: none;
+  font: 20px;
+  color: white;
+  background-color: rgb(86, 142, 227);
+  height: 40px;
+  margin: 20px;
+  border-radius: 6px;
+}
+
+.nav-buttons-signup {
+  width: 80px;
+  border: none;
+  font: 20px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 6px;
+  color: rgb(86, 142, 227);
+}
