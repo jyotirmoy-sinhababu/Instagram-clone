@@ -1,0 +1,25 @@
+.form-container {
+  align-items: center;
+  background-color: rgb(253, 248, 248);
+  border-radius: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  gap: 1.5rem;
+  height: 600px;
+  justify-content: center;
+
+  padding: 1.5rem;
+  width: 460px;
+}
+
+.form-header-img {
+  height: 180px;
+  width: 250px;
+}
+
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
