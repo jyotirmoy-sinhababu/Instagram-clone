@@ -8,9 +8,10 @@
   gap: 1.5rem;
   height: 600px;
   justify-content: center;
-
+  margin: 1.2rem;
   padding: 1.5rem;
   width: 460px;
+  left: 350px;
 }
 
 .form-header-img {
