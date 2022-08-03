@@ -3,13 +3,20 @@ import './navbar.css';
 import instagram from '../../images/instagram.png';
 import Modal from '../../modal/Modal';
 import SignUp from '../../utils/SignUp';
+import LogIn from '../../utils/LogIn';
 import { useState } from 'react';
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isLogIn, setIsLogIn] = useState(false);
+
   const openModal = () => {
     setIsOpen(true);
+  };
+
+  const openLogInModal = () => {
+    setIsLogIn(true);
   };
 
   return (
@@ -25,7 +32,9 @@ function NavBar() {
         />
       </div>
       <div className='nav-buttons'>
-        <button className='nav-buttons-login'>Log In</button>
+        <button onClick={openLogInModal} className='nav-buttons-login'>
+          Log In
+        </button>
         <button onClick={openModal} className='nav-buttons-signup'>
           Sign Up
         </button>
@@ -33,6 +42,11 @@ function NavBar() {
       <div>
         <Modal isOpen={isOpen}>
           <SignUp />
+        </Modal>
+      </div>
+      <div>
+        <Modal isOpen={isLogIn}>
+          <LogIn />
         </Modal>
       </div>
     </div>

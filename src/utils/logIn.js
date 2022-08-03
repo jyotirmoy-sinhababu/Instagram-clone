@@ -1,7 +1,8 @@
 import React from 'react';
+import './login.css';
 
-function logIn() {
-  const handleChange = () => {};
+function LogIn() {
+  const loginInput = () => {};
 
   return (
     <div className='login-container'>
@@ -31,15 +32,15 @@ function logIn() {
           name='password'
           className='login-formInp'
         />
-        <NavLink to='/reg' className='navigate-btn'>
+        {/* <NavLink to='/reg' className='navigate-btn'>
           sign up
         </NavLink>
         <button type='submit' className='btn'>
           Login
-        </button>
+        </button> */}
       </form>
     </div>
   );
 }
 
-export default logIn;
+export default LogIn;
